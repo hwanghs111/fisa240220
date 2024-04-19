@@ -4,11 +4,8 @@ FROM openjdk:17
 # 작업 디렉토리를 설정합니다.
 WORKDIR /app
 
-# 애플리케이션을 빌드할 때 필요한 파일을 복사합니다.
-COPY target/*.jar app.jar
-
-# Gradle Wrapper를 통해 애플리케이션을 빌드합니다.
-RUN ./gradlew build
+# Gradle을 통해 빌드된 JAR 파일을 복사합니다.
+COPY step06_citest-0.0.1-SNAPSHOT.jar app.jar
 
 # 컨테이너가 시작될 때 실행할 명령을 지정합니다.
 CMD ["java", "-jar", "app.jar"]
