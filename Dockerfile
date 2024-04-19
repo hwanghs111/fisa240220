@@ -1,5 +1,5 @@
 # Docker 이미지의 기본 이미지를 설정합니다. 여기서는 OpenJDK를 사용합니다.
-FROM openjdk:17-jre-slim
+FROM openjdk:17
 
 # 작업 디렉토리를 설정합니다.
 WORKDIR /app
