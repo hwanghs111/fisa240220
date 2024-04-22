@@ -35,3 +35,27 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### AWS ###
+.aws/
+
+### Jenkins ###
+jenkins/
+*.key
+*.xml
+secrets/
+identity.key.enc
+secret.key*
+*.bak
+
+
+### Build and temporary files ###
+*.log
+*.tmp
+*.temp
+dist/
+out/
+target/
+
+# Other common directories
+node_modules/
