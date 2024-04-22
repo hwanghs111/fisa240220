@@ -18,4 +18,4 @@ spec:
         imagePullPolicy: Always
         name: app-hellospring
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
